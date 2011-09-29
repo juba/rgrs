@@ -1,0 +1,12 @@
+* About
+
+This package provides functions for beginners and social sciences students or
+researchers. Currently it includes functions for cross-tabulation, weighting,
+results export, and maps plotting. The documentation and help pages are
+written in french.
+
+* Documentation
+
+For more information and installation instructions (in french) :
+
+http://alea.fr.eu.org/j/rgrs.html
