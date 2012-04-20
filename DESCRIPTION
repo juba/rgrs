@@ -11,6 +11,6 @@ Encoding: UTF-8
 Depends: 
 Suggests: tcltk, odfWeave, R2HTML, RColorBrewer, sp
 SystemRequirements: xclip (Linux)
-URL: http://alea.fr.eu.org/j/rgrs.html
+URL: http://alea.fr.eu.org/pages/rgrs
 
 
