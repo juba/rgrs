@@ -10,7 +10,7 @@
 }
 \usage{
 copie(obj, ...)
-\method{copie}{default}(obj, append=FALSE, file=FALSE, filename="temp.html",...)
+\method{copie}{default}(obj, append=FALSE, file=FALSE, filename="temp.html", clipboard.size=4096,...)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -22,6 +22,8 @@ copie(obj, ...)
     TRUE, exporte dans le fichier filename }
   \item{filename}{ nom du fichier dans lequel exporter l'objet, si
     file=TRUE }
+  \item{clipboard.size}{ sous Windows uniquement, taille du
+    presse-papier en kb. }
   \item{...}{ arguments passés à la fonction HTML() }
 }
 \details{
@@ -40,6 +42,10 @@ copie(obj, ...)
   fichier (par défaut nommé temp.html et situé dans le répertoire de
   travail. On peut ensuite l'intégrer directement dans Microsoft Word ou
   OpenOffice Writer via le menu Insertion > Fichier.
+
+  Si sous Windows vous obtenez des messages d'erreur du type "le tampon du
+  presse-papier est plein et des données sont perdues en sortie", alors
+  augmentez la valeur de l'argument clipboard.size.
 }
 \seealso{  \command{\link[R2HTML]{HTML}}, \command{\link[rgrs]{copie.proptab}} }
 \author{ Julien Barnier <julien.barnier@ens-lyon.fr>}
