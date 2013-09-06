@@ -1,3 +1,9 @@
+* Important note
+
+This package is now deprecated. Most used functions have moved to the
+[[https://github.com/juba/questionr][questionr]] package. Other functions (related to mapping or interfacing with
+Modalisa) are not maintained anymore.
+
 * About
 
 This package provides functions for beginners and social sciences students or
