@@ -1,5 +1,5 @@
 `renomme.variable` <-
-function (df, old, new) {
-  names(df)[which(names(df)==old)] <- new
-  df
+function (...) {
+  .Deprecated("copie",package="questionr","L'extension rgrs n'est plus maintenue. Merci d'utiliser l'extension questionr.")    
+  questionr::renomme.variable(...)
 }
