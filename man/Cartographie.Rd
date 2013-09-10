@@ -117,13 +117,18 @@ require(sp)
 plot(lyon)
 
 carte.prop(lyon, rp99, "tx.chom", sp.key="DepCom", data.key="code")
-carte.prop(lyon, rp99, "tx.chom", sp.key="DepCom", data.key="code",main="Taux de chomage 1999", sub="Source : INSEE, RP 1999", palette.pos="RdPu", posleg="topright")
+carte.prop(lyon, rp99, "tx.chom", sp.key="DepCom", data.key="code",
+           main="Taux de chomage 1999", sub="Source : INSEE, RP 1999", 
+          palette.pos="RdPu", posleg="topright")
 
 carte.eff(lyon, rp99, "pop.act", sp.key="DepCom", data.key="code")
-carte.eff(lyon, rp99, "pop.act", sp.key="DepCom", data.key="code", main="Population active en 1999", sub="Source : INSEE, RP 1999", pch=23, cex=10, col.bg="blue",col.border="yellow", posleg="topright")
+carte.eff(lyon, rp99, "pop.act", sp.key="DepCom", data.key="code", 
+          main="Population active en 1999", sub="Source : INSEE, RP 1999", 
+          pch=23, cex=10, col.bg="blue",col.border="yellow", posleg="topright")
 
 rp99$qual <- sample(c("A","B","C","D","E"), nrow(rp99),replace=TRUE)
-carte.qual(lyon, rp99, "qual", sp.key="DepCom", data.key="code", main="Types d'arrondissements", sub="Source : aleatoire", posleg="bottomright", palette.qual="Set2")
+carte.qual(lyon, rp99, "qual", sp.key="DepCom", data.key="code", main="Types d'arrondissements", 
+           sub="Source : aleatoire", posleg="bottomright", palette.qual="Set2")
 
 carte.prop(lyon, rp99, "tx.chom", sp.key="DepCom", data.key="code", main="Taux de chomage 1999")
 carte.labels(lyon, lyon@data$Nom_Com, outline=TRUE)
