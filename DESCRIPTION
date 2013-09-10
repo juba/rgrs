@@ -13,7 +13,7 @@ Description: Deprecated package, please use the 'questionr' package instead.
 License: GPL (>= 2)
 Encoding: UTF-8
 Depends:
-    questionr
+    questionr (>= 0.2)
 Suggests:
     tcltk,
     odfWeave,
